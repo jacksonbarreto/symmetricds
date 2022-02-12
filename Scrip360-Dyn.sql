@@ -23,8 +23,8 @@ VALUES ('DynamanWMS-2-Sanitop360', 'DynamanWMS', 'Sanitop360', current_timestamp
 
 -- CONFIGURAÇÃO DOS CANAIS 
 insert into SYM_CHANNEL (channel_id, processing_order, max_batch_size, max_batch_to_send,
-                         extract_period_millis, batch_algorithm, enabled, description)
-values ('chanelDynaman', 2, 1000, 10, 0, 'default', 1, 'Dynaman WMS data chanel');
+                         extract_period_millis, batch_algorithm, enabled, reload_flag, description)
+values ('chanelDynaman', 2, 1000, 10, 0, 'default', 1, 1, 'Dynaman WMS data chanel');
 
 
 -- CONFIGURAÇÃO DOS TRIGGERS (TABELAS A SEREM MONITORADAS)
