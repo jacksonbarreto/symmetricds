@@ -12,7 +12,7 @@ INSERT INTO SYM_NODE_GROUP_LINK (source_node_group_id, target_node_group_id, dat
 VALUES ('DynamanWMS', 'Sanitop360', 'P');
 
 INSERT INTO SYM_NODE_GROUP_LINK (source_node_group_id, target_node_group_id, data_event_action)
-VALUES ('Sanitop360', 'DynamanWMS', 'P');
+VALUES ('Sanitop360', 'DynamanWMS', 'W');
 
 
 -- CONFIGURAÇÃO DO ROTEAMENTO (talvez seja necessário configurar o Target Catalog e o Target Schema)
