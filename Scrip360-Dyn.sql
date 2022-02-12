@@ -11,6 +11,9 @@ VALUES ('Sanitop360', 'Sanitop 360 - SQL Server');
 INSERT INTO SYM_NODE_GROUP_LINK (source_node_group_id, target_node_group_id, data_event_action)
 VALUES ('DynamanWMS', 'Sanitop360', 'P');
 
+INSERT INTO SYM_NODE_GROUP_LINK (source_node_group_id, target_node_group_id, data_event_action)
+VALUES ('Sanitop360', 'DynamanWMS', 'P');
+
 
 -- CONFIGURAÇÃO DO ROTEAMENTO (talvez seja necessário configurar o Target Catalog e o Target Schema)
 -- Target Table, deve ser definido no caso de o nome da tabela de destino ser diferente da de origem.
@@ -100,7 +103,7 @@ values (
     );
 insert into sym_transform_table (transform_id, source_node_group_id, target_node_group_id, transform_point, source_table_name, target_table_name, delete_action, update_action, column_policy, create_time, last_update_time)
 values (
-        'inboundOrderDetailNormalize',
+        'outboundOrderDetailNormalize',
         'DynamanWMS',
         'Sanitop360',
         'EXTRACT',
@@ -184,7 +187,7 @@ values (
     );
     insert into sym_transform_table (transform_id, source_node_group_id, target_node_group_id, transform_point, source_table_name, target_table_name, delete_action, update_action, column_policy, create_time, last_update_time)
 values (
-        'inboundOrderDetailNormalize',
+        'outboundOrderTextNormalize',
         'DynamanWMS',
         'Sanitop360',
         'EXTRACT',
