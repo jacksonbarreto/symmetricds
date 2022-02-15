@@ -35,7 +35,7 @@ INSERT INTO SYM_CHANNEL
     last_update_time, 
     create_time,
     last_update_by,
-    description, 
+    description
 )
 VALUES 
 (
@@ -50,7 +50,7 @@ VALUES
     current_timestamp, 
     current_timestamp,
     'Installation',
-    'Dynaman WMS data chanel',
+    'Dynaman WMS data chanel'
 );
 
 
@@ -243,6 +243,7 @@ VALUES
     'IMPLIED',
     current_timestamp,
     current_timestamp,
+    'Installation',
     'Changes the name of the source table on the target.'
 );
 INSERT INTO sym_transform_table 
