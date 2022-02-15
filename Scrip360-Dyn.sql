@@ -69,15 +69,15 @@ VALUES
 (
     'tablesDynaman',
     'task_detail, 
-        stock_product, 
-        picklist_detail_order, 
-        outbound_Order_Detail, 
-        inbound_Order_Header, 
-        Container_Inventory, 
-        arrival_detail, 
-        arrival_header, 
-        inbound_Order_detail, 
-        outbound_Order_text',
+    stock_product, 
+    picklist_detail_order, 
+    outbound_Order_Detail, 
+    inbound_Order_Header, 
+    Container_Inventory, 
+    arrival_detail, 
+    arrival_header, 
+    inbound_Order_detail, 
+    outbound_Order_text',
     'chanelDynaman', 
     current_timestamp, 
     current_timestamp,
@@ -103,7 +103,7 @@ INSERT INTO SYM_TRIGGER_ROUTER
 )
 VALUES 
 (
-    'tablesDynaman', 
+    'tablesDynaman',
     'DynamanWMS-2-Sanitop360', 
     1, 
     current_timestamp, 
