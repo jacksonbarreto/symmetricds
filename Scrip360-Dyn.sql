@@ -68,15 +68,7 @@ INSERT INTO SYM_TRIGGER
 VALUES 
 (
     'tablesDynaman',
-    'task_detail, 
-    stock_product, 
-    picklist_detail_order, 
-    outbound_Order_Detail, 
-    inbound_Order_Header, 
-    arrival_detail, 
-    arrival_header, 
-    inbound_Order_detail, 
-    outbound_Order_text',
+    'task_detail,stock_product,picklist_detail_order,outbound_Order_Detail,inbound_Order_Header,arrival_detail,arrival_header,inbound_Order_detail,outbound_Order_text',
     'chanelDynaman', 
     current_timestamp, 
     current_timestamp,
