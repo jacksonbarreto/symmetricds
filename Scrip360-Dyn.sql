@@ -73,7 +73,6 @@ VALUES
     picklist_detail_order, 
     outbound_Order_Detail, 
     inbound_Order_Header, 
-    Container_Inventory, 
     arrival_detail, 
     arrival_header, 
     inbound_Order_detail, 
@@ -270,38 +269,6 @@ VALUES
     'EXTRACT',
     'inbound_Order_Header',
     'Dyn56_Inbound_order_Header',
-    'DEL_ROW',
-    'UPD_ROW',
-    'IMPLIED',
-    current_timestamp,
-    current_timestamp,
-    'Installation',
-    'Changes the name of the source table on the target.'
-);
-INSERT INTO sym_transform_table 
-(
-    transform_id, 
-    source_node_group_id, 
-    target_node_group_id, 
-    transform_point, 
-    source_table_name, 
-    target_table_name, 
-    delete_action, 
-    update_action, 
-    column_policy, 
-    create_time, 
-    last_update_time,
-    last_update_by,
-    description
-)
-VALUES 
-(
-    'containerInventoryChangeName',
-    'DynamanWMS',
-    'Sanitop360',
-    'EXTRACT',
-    'Container_Inventory',
-    'Dyn56_Container_Inventory',
     'DEL_ROW',
     'UPD_ROW',
     'IMPLIED',
