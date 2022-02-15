@@ -69,7 +69,6 @@ VALUES
 (
     'tablesDynaman',
     'task_detail, 
-        outbound_order_header,  
         stock_product, 
         picklist_detail_order, 
         outbound_Order_Detail, 
@@ -150,38 +149,7 @@ VALUES
     'Changes the name of the source table on the target.'
 );
 
-INSERT INTO sym_transform_table
-(
-    transform_id, 
-    source_node_group_id, 
-    target_node_group_id, 
-    transform_point, 
-    source_table_name, 
-    target_table_name, 
-    delete_action, 
-    update_action, 
-    column_policy, 
-    create_time, 
-    last_update_time,
-    last_update_by,
-    description
-)
-VALUES 
-(
-    'outboundOrderHeaderChangeName',
-    'DynamanWMS',
-    'Sanitop360',
-    'EXTRACT',
-    'outbound_order_header',
-    'Dyn56_outbound_order_Header',
-    'DEL_ROW',
-    'UPD_ROW',
-    'IMPLIED',
-    current_timestamp,
-    current_timestamp,
-    'Installation',
-    'Changes the name of the source table on the target.'
-);
+
 INSERT INTO sym_transform_table 
 (
     transform_id, 
