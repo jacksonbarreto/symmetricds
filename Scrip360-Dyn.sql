@@ -1,24 +1,102 @@
 -- CONFIGURAÇÃO DOS GRUPOS DE NÓS
-INSERT INTO SYM_NODE_GROUP (node_group_id, description)
-VALUES ('DynamanWMS', 'IBS Dynaman WMS - SQL Server');
+INSERT INTO SYM_NODE_GROUP 
+(
+    node_group_id, 
+    description,
+    create_time, 
+    last_update_time,
+    last_update_by
+)
+VALUES 
+(
+    'DynamanWMS', 
+    'IBS Dynaman WMS - SQL Server',
+    current_timestamp, 
+    current_timestamp,
+    'Installation'
+);
 
-INSERT INTO SYM_NODE_GROUP (node_group_id, description)
-VALUES ('Sanitop360', 'Sanitop 360 - SQL Server');
+INSERT INTO SYM_NODE_GROUP
+(
+    node_group_id, 
+    description,
+    create_time, 
+    last_update_time,
+    last_update_by
+)
+VALUES 
+(
+    'Sanitop360', 
+    'Sanitop 360 - SQL Server',
+    current_timestamp, 
+    current_timestamp,
+    'Installation'
+);
 
 
 -- CONFIGURAÇÃO DOS LINKS (CONEXÃO ENTRE GRUPOS)
 -- verificar o data_event_action correto para cada link
-INSERT INTO SYM_NODE_GROUP_LINK (source_node_group_id, target_node_group_id, data_event_action)
-VALUES ('DynamanWMS', 'Sanitop360', 'P');
+INSERT INTO SYM_NODE_GROUP_LINK 
+(
+    source_node_group_id, 
+    target_node_group_id, 
+    data_event_action,
+    create_time, 
+    last_update_time,
+    last_update_by
+)
+VALUES 
+(
+    'DynamanWMS', 
+    'Sanitop360', 
+    'P',
+    current_timestamp, 
+    current_timestamp,
+    'Installation'
+);
 
-INSERT INTO SYM_NODE_GROUP_LINK (source_node_group_id, target_node_group_id, data_event_action)
-VALUES ('Sanitop360', 'DynamanWMS', 'W');
+INSERT INTO SYM_NODE_GROUP_LINK
+(
+    source_node_group_id, 
+    target_node_group_id, 
+    data_event_action,
+    create_time, 
+    last_update_time,
+    last_update_by
+)
+VALUES 
+(
+    'Sanitop360', 
+    'DynamanWMS', 
+    'W',
+    current_timestamp, 
+    current_timestamp,
+    'Installation'
+);
 
 
 -- CONFIGURAÇÃO DO ROTEAMENTO (talvez seja necessário configurar o Target Catalog e o Target Schema)
 -- Target Table, deve ser definido no caso de o nome da tabela de destino ser diferente da de origem.
-INSERT INTO SYM_ROUTER (router_id, source_node_group_id, target_node_group_id, create_time, last_update_time)
-VALUES ('DynamanWMS-2-Sanitop360', 'DynamanWMS', 'Sanitop360', current_timestamp, current_timestamp);
+INSERT INTO SYM_ROUTER 
+(
+    router_id, 
+    source_node_group_id, 
+    target_node_group_id, 
+    create_time, 
+    last_update_time,
+    last_update_by,
+    description
+)
+VALUES 
+(
+    'DynamanWMS-2-Sanitop360', 
+    'DynamanWMS', 
+    'Sanitop360', 
+    current_timestamp, 
+    current_timestamp,
+    'Installation',
+    'Router DynamanWMS to Sanitop360'
+);
 
 
 -- CONFIGURAÇÃO DOS CANAIS 
