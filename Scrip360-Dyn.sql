@@ -146,7 +146,7 @@ INSERT INTO SYM_TRIGGER
 VALUES 
 (
     'tablesDynaman',
-    'task_detail,stock_product,picklist_detail_order,outbound_Order_Detail,inbound_Order_Header,arrival_detail,arrival_header,inbound_Order_detail,outbound_Order_text',
+    'task_detail,stock_product,picklist_detail_order, outbound_order_header,outbound_Order_Detail,inbound_Order_Header,arrival_detail,arrival_header,inbound_Order_detail,outbound_Order_text',
     'chanelDynaman', 
     current_timestamp, 
     current_timestamp,
@@ -307,6 +307,38 @@ VALUES
     'EXTRACT',
     'outbound_Order_detail',
     'Dyn56_Outbound_order_Detail',
+    'DEL_ROW',
+    'UPD_ROW',
+    'IMPLIED',
+    current_timestamp,
+    current_timestamp,
+    'Installation',
+    'Changes the name of the source table on the target.'
+);
+INSERT INTO sym_transform_table 
+(
+    transform_id, 
+    source_node_group_id, 
+    target_node_group_id, 
+    transform_point, 
+    source_table_name, 
+    target_table_name, 
+    delete_action, 
+    update_action, 
+    column_policy, 
+    create_time, 
+    last_update_time,
+    last_update_by,
+    description
+)
+VALUES 
+(
+    'outboundOrderHeaderChangeName',
+    'DynamanWMS',
+    'Sanitop360',
+    'EXTRACT',
+    'outbound_order_header',
+    'Dyn56_Outbound_order_header',
     'DEL_ROW',
     'UPD_ROW',
     'IMPLIED',
