@@ -507,7 +507,6 @@ VALUES
     'Installation',
     'Changes the name of the source table on the target.'
  );
- Container_Inventory
  INSERT INTO sym_transform_table 
 (
     transform_id, 
