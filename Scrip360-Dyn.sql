@@ -559,7 +559,7 @@ VALUES
 ) 
 VALUES 
 (
-        'locationCodeContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'location_code', 
         'location_code', 
@@ -589,11 +589,11 @@ VALUES
 ) 
 VALUES 
 (
-        'containerCodeContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'Container_code', 
         'container_code', 
-        0,
+        1,
         'copy', 
         '', 
         1, 
@@ -619,7 +619,7 @@ VALUES
 ) 
 VALUES 
 (
-        'inventoryQtyContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'inventory_qty', 
         'inventory_qty', 
@@ -649,7 +649,7 @@ INSERT INTO SYM_TRANSFORM_COLUMN
 ) 
 VALUES 
 (
-        'qtyOnPicklistContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'qty_on_picklist', 
         'qty_on_picklist', 
@@ -679,7 +679,7 @@ INSERT INTO SYM_TRANSFORM_COLUMN
 ) 
 VALUES 
 (
-        'qtyNotOnPicklistContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'qty_not_on_picklist', 
         'qty_not_on_picklist', 
@@ -709,7 +709,7 @@ INSERT INTO SYM_TRANSFORM_COLUMN
 ) 
 VALUES 
 (
-        'pickedQtyContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'picked_qty', 
         'picked_qty', 
@@ -739,7 +739,7 @@ INSERT INTO SYM_TRANSFORM_COLUMN
 ) 
 VALUES 
 (
-        'handlingQtyContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'handling_qty', 
         'handling_qty', 
@@ -769,7 +769,7 @@ INSERT INTO SYM_TRANSFORM_COLUMN
 ) 
 VALUES 
 (
-        'itemCodeContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'item_code', 
         '', 
@@ -799,7 +799,7 @@ INSERT INTO SYM_TRANSFORM_COLUMN
 ) 
 VALUES 
 (
-        'equipmentZoneCodeContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'equipment_zone_code', 
         '', 
@@ -829,7 +829,7 @@ INSERT INTO SYM_TRANSFORM_COLUMN
 ) 
 VALUES 
 (
-        'stockTypeContainerTransform', 
+        'Container_InventoryChangeName', 
         '*', 
         'StockType', 
         '', 
