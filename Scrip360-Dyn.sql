@@ -157,7 +157,8 @@ VALUES
 
 
 -- CONFIGURAÇÃO DO ROTEAMENTO DOS TRIGGERS
--- Atenção ao initial_load_order: Posição numérica destas tabelas no carregamento inicial, enviada em ordem numérica crescente. 
+-- Atenção ao initial_load_order: Posição numérica destas tabelas no carregamento inicial, 
+-- enviada em ordem numérica crescente. 
 -- Quando dois valores numéricos são iguais, a ordem é baseada em restrições de chave estrangeira. 
 -- Use um número negativo para excluir a tabela do carregamento inicial.
 INSERT INTO SYM_TRIGGER_ROUTER 
